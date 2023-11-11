@@ -1,6 +1,6 @@
 const showLoadingButton = document.getElementById('showLoadingButton');
 
-
+ console.log()
 
 showLoadingButton.addEventListener('click', () => {
   const loadingOverlay = document.createElement('div');
@@ -12,10 +12,11 @@ showLoadingButton.addEventListener('click', () => {
   loadingOverlay.appendChild(loadingSpinner);
   document.body.appendChild(loadingOverlay);
 
-  // Simula um atraso de 2 segundos (pode ser removido em um ambiente real)
+
   setTimeout(() => {
     loadingOverlay.remove(); 
 
-    window.location.href = "http://127.0.0.1:5500/EnxameTech_2.0/dashbord-home.html"; // Substitua com a URL desejada
-}, 2000); // Redireciona após 2 segundos (tempo igual ao tempo do seu setTimeout)
+    window.location.href = "http://127.0.0.1:5500/dashbord-home.html"; 
+}, 2000); 
 }); 
+

@@ -2,7 +2,11 @@ const form = document.getElementById('loadim');
 const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required')
 const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+form.addEventListener("submit", (e)=>{
+    emailCheck()
+    emailValidate()
 
+})
 
 // Adcionar erro no input
 function setError(index){
