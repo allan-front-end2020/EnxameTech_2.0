@@ -16,7 +16,7 @@ showLoadingButton.addEventListener('click', () => {
   setTimeout(() => {
     loadingOverlay.remove(); 
 
-    window.location.href = "http://127.0.0.1:5500/dashbord-home.html"; 
+    window.location.href = "http://127.0.0.1:5500/EnxameTech_2.0/dashbord-home.html"; 
 }, 2000); 
 }); 
 

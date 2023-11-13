@@ -153,6 +153,7 @@ body {
 .section--container{
    margin-top: 12px;
    padding: 2rem; 
+   height: 83vh;
    background-color: #fff;
    border-radius: 10px;
 }
