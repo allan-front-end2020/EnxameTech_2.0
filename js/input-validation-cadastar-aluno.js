@@ -2,17 +2,16 @@ const form = document.getElementById('form');
 const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required')
 const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
-form.addEventListener("submit", (e)=>{
-    e.preventDefault();
-    cpfValidate()
-    nomeValidate()
-    lastNameValidate()
-    emailCheck()
-    password()
-    tel()
-    endereco()
+// form.addEventListener("submit", (e)=>{
+//     e.preventDefault();
+//     cpfValidate()
+//     nomeValidate()
+//     emailCheck()
+//     password()
+//     tel()
+//     endereco()
 
-})
+// })
 
 $('#cpf').mask('000.000.000-00', {reverse: true});
 $('#telefone').mask('(00) 00000-0000');

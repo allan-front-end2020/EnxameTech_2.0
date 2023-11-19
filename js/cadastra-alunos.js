@@ -34,6 +34,7 @@ let formStepsNum = 0;
 
 
 
+
 nextBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     formStepsNum++;
@@ -61,6 +62,8 @@ function updateFormSteps() {
   formSteps[formStepsNum].classList.add("form-step-active");
 }
 
+let currentStep = 0
+
 function updateProgressbar() {
   progressSteps.forEach((progressStep, idx) => {
     if (idx < formStepsNum + 1) {
@@ -71,12 +74,25 @@ function updateProgressbar() {
   });
 
   const progressActive = document.querySelectorAll(".progress-step-active");
+  
 
- const progress = document.getElementById("yourProgressBarId");
+  const progressActiveArray = Array.from(progressActive);
 
-// Assuming progressActive is an array of active steps and progressSteps is an array of all steps
-const currentStepIndex = progressActive.indexOf(currentStep); // Replace currentStep with your actual variable representing the current step
 
-// Calculate the width based on the current step
-progress.style.width = (currentStepIndex / (progressSteps.length - 1)) * 100 + "%";
+  const currentStepIndex = progressActiveArray.indexOf(currentStep);
+
+  progress.style.width = (currentStepIndex / (progressSteps.length - 1)) * 100 + "%";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
